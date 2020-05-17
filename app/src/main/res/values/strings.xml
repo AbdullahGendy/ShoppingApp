@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoppingApp</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_app_id">607604473174538</string>
+    <string name="fb_login_protocol_scheme">fb607604473174538</string>
+    <string name="USER_ID_KEY">userID</string>
+    <string name="USER_FULL_NAME_KEY">userName</string>
+    <string name="USER_BALANCE_KEY">userBalance</string>
+    <string name="USER_ADDRESS_KEY">userAddress</string>
+    <string name="USER_BIRTH_DATE_KEY">userBirthDate</string>
+    <string name="USER_PHOTO_KEY">userPhoto</string>
+    <string name="USER_NID_KEY">userNationalID</string>
+    <string name="USER_TYPE">userType</string>
+    <string name="USER_PHONE_KEY">userPhone</string>
+    <string name="USER_EMAIL_KEY">userEmail</string>
+</resources>

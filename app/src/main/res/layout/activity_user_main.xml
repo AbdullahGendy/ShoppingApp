@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_20ssp"
+        android:text="User Main"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_20ssp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_wish_list"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wish List" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/btn_orders"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp" />
+
+        <Button
+            android:id="@+id/btn_home"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhite"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Profile"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_19ssp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_95sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/images"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="@dimen/_2sdp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_merchant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Apple"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+
+
+                <!--1st -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal" />
+                <!--1-->
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/phone_number_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:gravity="bottom"
+                            android:text="Phone Number"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:text="01030707109"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wqd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal" />
+
+
+                <!--2-->
+                <LinearLayout
+                    android:id="@+id/jdsafa"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/address_icon"
+
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:gravity="bottom"
+                            android:text="Address"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:text="Mesalla, Fayoum"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hdds"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+                <!--3-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/bod_icon"
+                        android:tint="@color/colorPrimaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:gravity="bottom"
+                            android:text="Email"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="mail@domain.com"
+                            android:maxLines="1"
+                            android:padding="0dp"
+                            android:textColor="#000"
+                            android:textColorHint="#000"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorPrimaryDark"
+                    tools:ignore="Orientation" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
